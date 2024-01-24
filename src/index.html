@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovian</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="img/logo.png" alt="logo" id="logo">
+    </div>
+    <img src="img/banner.jpg" alt="Banner" height="240" id="banner">
+    <h1>About Jovian</h1>
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">At Jovian, we're on a mission to build
+                the world's most highly reputed technical
+                university, and we're building completely
+                online. We offer several beginner friendly
+                courses that are taken by 300,000+ registered
+                users.
+            </p>
+            <p>We also offer 2 industry-focused bootcamps:
+            <ol>
+                <li>
+                    <a href="https://www.jovian.com/full-stack-developer-bootcamp">
+                        Jovian Full Stack Developer Bootcamp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.jovian.com/data-science-bootcamp">
+                        Jovian Data Science Bootcamp
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img src="img/team.jpg" alt="team" id="team-img">
+        </div>
+    </div>
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+
+        <!--
+        <div>
+            <a href="mailto:markusitv111@gmail.com?subject=Frontend Developer Application" class="apply-btn"
+                target="_blank">Apply Now</a>
+            <h3 class="job-role">Frontend Developer</h3>
+            <div class="location">Košice, Slovakia</div>
+        </div>
+
+        <div>
+            <a href="mailto:markusitv111@gmail.com?subject=Backend Developer Application" class="apply-btn"
+                target="_blank">Apply Now</a>
+            <h3 class="job-role">Backend Developer</h3>
+            <div class="location">Bratislava, Slovakia</div>
+        </div>
+
+        <div>
+            <a href="mailto:markusitv111@gmail.com?subject=Data Scientist Application" class="apply-btn"
+                target="_blank">Apply Now</a>
+            <h3 class="job-role">Data Scientist</h3>
+            <div class="location">Banska Bystrica, Slovakia</div>
+        </div>
+
+        <div>
+            <a href="mailto:markusitv111@gmail.com?subject=Full Stack Developer Application" class="apply-btn"
+                target="_blank">Apply Now</a>
+            <h3 class="job-role">Full Stack Developer</h3>
+            <div class="location">Bratislava, Slovakia</div>
+        </div>
+-->
+
+        <table id="jobs-table">
+            <tr class="table-header-row">
+                <th rowspan="2">Job Role</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="table-header-row">
+                <th>City</th>
+                <th>Country</th>
+
+            </tr>
+            <tr class="table-row" id="job-1">
+                <td>Frontend Developer</td>
+                <td>Košice</td>
+                <td>Slovakia</td>
+                <td>1100€</td>
+                <td>2024-01-01</td>
+            </tr>
+            <tr class="table-row" id="job-2">
+                <td>Backend Developer</td>
+                <td>Bratislava</td>
+                <td>Slovakia</td>
+                <td>1300€</td>
+                <td>2024-01-01</td>
+            </tr>
+            <tr class=" table-row" id="job-3">
+                <td>Data Scientist</td>
+                <td>Banska Bystrica</td>
+                <td>Slovakia</td>
+                <td>1500€</td>
+                <td>2024-01-01</td>
+            </tr>
+            <tr class="table-row" id="job-4"">
+        <td>Full Stack Developer</td>
+        <td>Bratislava</td>
+        <td>Slovakia</td>
+        <td>1800€</td>
+        <td>2024-01-01</td>
+    </tr>
+
+</table>
+
+    </div>
+
+<div id="application">
+                <h2>Submit Your Application</h2>
+
+                <form id="application-form">
+                    <div class="form-group">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required placeholder="jdoe@example.com">
+                    </div>
+                    <div class="form-group">
+
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" id="phone" name="phone" required placeholder="+919898989898">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Position Applied for</label><br>
+                        <select id="position" name="position" required>
+                            <option value="">Select an option</option>
+                            <option value="Frontend Developer">Frontend Developer</option>
+                            <option value="Full Stack Developer">Full Stack Developer</option>
+                            <option value="Data Scientist">Data Scientist</option>
+                            <option value="ML Engineer">ML Engineer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume">Upload Resume</label><br>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="coverletter">Cover Letter</label><br>
+                        <textarea id="coverletter" name="coverletter" rows="5" required
+                            placeholder="Explain what makes you suitable for the job.."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="terms">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+
+
+    </div>
+
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Programs
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@jovianhq" target="_blank">
+                    YouTube
+                </a>
+            </li>
+        </ul>
+        <span class="copyright">© 2020 Jovian. All rights reserved.</span>
+    </div>
+</body>
+
+</html>
