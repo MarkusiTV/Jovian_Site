@@ -308,4 +308,12 @@ select {
         #about {
             max-width: 1000px;
         }
+
+        #jobs {
+            min-width: 1000px;
+        }
+
+        #application {
+            max-width: 1000px;
+        }
     }
